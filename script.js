@@ -36,3 +36,34 @@ demoBtn.addEventListener('click', () => {
   const body = encodeURIComponent('Hola Daniel,\n\nMe gustaría agendar una demo para ver propuestas.\n\nGracias.');
   window.location.href = `mailto:hola@danielagullo.com?subject=${subject}&body=${body}`;
 });
+
+/* Scroll reveal: añade la clase .in-view cuando el elemento entra en pantalla.
+   Aplica un pequeño stagger para elementos en la misma sección. */
+const reveals = document.querySelectorAll('.reveal');
+const observerOptions = { root: null, rootMargin: '0px 0px -12% 0px', threshold: 0.12 };
+
+let io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+      // Si quieres que no vuelva a animarse al salir, desconectamos el target
+      io.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+reveals.forEach((el, idx) => {
+  // Pequeño stagger inline para elementos que están juntos
+  el.style.transitionDelay = `${(idx % 6) * 40}ms`;
+  io.observe(el);
+});
+
+// Cerrar menú al hacer click en un enlace (mobile)
+document.querySelectorAll('.nav a').forEach(a => {
+  a.addEventListener('click', () => {
+    if (nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
