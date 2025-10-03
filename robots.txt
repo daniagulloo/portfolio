@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TU_USUARIO.github.io/portfolio/sitemap.xml
+Sitemap: https://daniagulloo.github.io/portfolio/sitemap.xml
