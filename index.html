@@ -12,7 +12,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio">
-        <svg class="brand-logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden><rect width="24" height="24" rx="6" fill="url(#g)"/><text x="50%" y="54%" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif" font-weight="700">DA</text><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs></svg>
+        <svg class="brand-logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <defs>
+            <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+          </defs>
+          <rect width="24" height="24" rx="6" fill="url(#g)"/>
+          <text x="50%" y="54%" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif" font-weight="700">DA</text>
+        </svg>
         <span class="brand-text">Daniel Agulló</span>
       </a>
 
@@ -23,9 +29,16 @@
         <a href="#contacto" class="cta">Contactar</a>
       </nav>
 
-      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema" aria-pressed="false">
+          <span class="icon-sun" aria-hidden>☀️</span>
+          <span class="icon-moon" aria-hidden>🌙</span>
+        </button>
+
+        <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -116,6 +129,45 @@
               </div>
             </div>
           </article>
+
+          <!-- Proyecto 4 -->
+          <article class="project reveal">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Portfolio creativo" loading="lazy">
+            <div class="project-info">
+              <h3>Portfolio creativo</h3>
+              <p>Microinteracciones y animaciones para estudio creativo.</p>
+              <div class="project-actions">
+                <a href="#" class="btn small">Demo</a>
+                <a href="#" class="btn small outline">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 5 -->
+          <article class="project reveal">
+            <img src="https://images.unsplash.com/photo-1498050108023-0b3f8a1a2e9b?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Tienda y producto" loading="lazy">
+            <div class="project-info">
+              <h3>Tienda y producto</h3>
+              <p>Checkout optimizado y flujo de compra rápido.</p>
+              <div class="project-actions">
+                <a href="#" class="btn small">Demo</a>
+                <a href="#" class="btn small outline">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 6 -->
+          <article class="project reveal">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="App mobile web" loading="lazy">
+            <div class="project-info">
+              <h3>PWA y experiencia móvil</h3>
+              <p>Progressive Web App con soporte offline y performance.</p>
+              <div class="project-actions">
+                <a href="#" class="btn small">Demo</a>
+                <a href="#" class="btn small outline">Código</a>
+              </div>
+            </div>
+          </article>
         </div>
 
         <p class="note reveal">¿Quieres ver más? Puedo enviar un PDF con casos de estudio o preparar una demo en vivo.</p>
@@ -136,7 +188,7 @@
           </div>
           <div class="about-stats">
             <div class="stat reveal">
-              <strong>+110</strong>
+              <strong>+50</strong>
               <span>Proyectos</span>
             </div>
             <div class="stat reveal">
@@ -175,7 +227,7 @@
               <button type="submit" class="btn primary">Enviar mensaje</button>
               <button type="button" id="demo-btn" class="btn outline">Pedir demo</button>
             </div>
-            <p class="form-note">O escríbeme directamente a <a href="mailto:danielagullojandula@gmail.com">danielagullojandula@gmail.com</a></p>
+            <p class="form-note">O escríbeme directamente a <a href="mailto:hola@danielagullo.com">hola@danielagullo.com</a></p>
           </form>
 
           <div class="contact-info reveal">
