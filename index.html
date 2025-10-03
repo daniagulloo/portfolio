@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#inicio">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden><rect width="24" height="24" rx="6" fill="#2B6CB0"/><text x="50%" y="54%" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif" font-weight="700">DA</text></svg>
+        <svg class="brand-logo" width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden><rect width="24" height="24" rx="6" fill="url(#g)"/><text x="50%" y="54%" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif" font-weight="700">DA</text><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs></svg>
         <span class="brand-text">Daniel Agulló</span>
       </a>
 
@@ -23,24 +23,24 @@
         <a href="#contacto" class="cta">Contactar</a>
       </nav>
 
-      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero reveal" data-section>
       <div class="container hero-inner">
         <div class="hero-text">
-          <h1>Hola, soy Daniel Agulló</h1>
-          <p class="lead">Creador de páginas web — diseño y desarrollo de sitios responsivos, rápidos y con foco en conversión.</p>
-          <div class="hero-cta">
+          <h1 class="reveal">Hola, soy Daniel Agulló</h1>
+          <p class="lead reveal">Creador de páginas web — diseño y desarrollo de sitios responsivos, rápidos y con foco en conversión.</p>
+          <div class="hero-cta reveal">
             <a href="#portfolio" class="btn primary">Ver mi trabajo</a>
             <a href="#contacto" class="btn outline">Trabajemos juntos</a>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden>
+        <div class="hero-visual reveal" aria-hidden>
           <div class="device-mockup">
             <div class="screen">
               <div class="screenshot">Tu proyecto aquí</div>
@@ -50,21 +50,21 @@
       </div>
     </section>
 
-    <section id="servicios" class="section bg-light">
+    <section id="servicios" class="section bg-light reveal" data-section>
       <div class="container">
         <h2 class="section-title">Servicios</h2>
         <p class="section-sub">Desde landing pages hasta tiendas online y webs corporativas.</p>
 
         <div class="cards">
-          <article class="card">
+          <article class="card reveal">
             <h3>Diseño Web</h3>
             <p>Maquetación pixel-perfect, mobile-first y accesible.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Desarrollo Front-end</h3>
             <p>HTML, CSS moderno, JS y frameworks según necesidad.</p>
           </article>
-          <article class="card">
+          <article class="card reveal">
             <h3>Optimización</h3>
             <p>Performance, SEO técnico y mejores prácticas para velocidad.</p>
           </article>
@@ -72,14 +72,14 @@
       </div>
     </section>
 
-    <section id="portfolio" class="section">
+    <section id="portfolio" class="section reveal" data-section>
       <div class="container">
         <h2 class="section-title">Portfolio</h2>
         <p class="section-sub">Algunos proyectos recientes — haz click para ver más detalles.</p>
 
         <div class="portfolio-grid">
           <!-- Proyecto 1 -->
-          <article class="project">
+          <article class="project reveal">
             <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Proyecto Tienda online" loading="lazy">
             <div class="project-info">
               <h3>Landing para ecommerce</h3>
@@ -92,7 +92,7 @@
           </article>
 
           <!-- Proyecto 2 -->
-          <article class="project">
+          <article class="project reveal">
             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Proyecto web corporativa" loading="lazy">
             <div class="project-info">
               <h3>Web corporativa</h3>
@@ -105,7 +105,7 @@
           </article>
 
           <!-- Proyecto 3 -->
-          <article class="project">
+          <article class="project reveal">
             <img src="https://images.unsplash.com/photo-1505765052753-2e2f0d42f8b6?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="App web" loading="lazy">
             <div class="project-info">
               <h3>Panel de administración</h3>
@@ -118,11 +118,11 @@
           </article>
         </div>
 
-        <p class="note">¿Quieres ver más? Puedo enviar un PDF con casos de estudio o preparar una demo en vivo.</p>
+        <p class="note reveal">¿Quieres ver más? Puedo enviar un PDF con casos de estudio o preparar una demo en vivo.</p>
       </div>
     </section>
 
-    <section id="sobre-mi" class="section bg-light">
+    <section id="sobre-mi" class="section bg-light reveal" data-section>
       <div class="container about">
         <h2 class="section-title">Sobre mí</h2>
         <div class="about-inner">
@@ -135,15 +135,15 @@
             </ul>
           </div>
           <div class="about-stats">
-            <div class="stat">
+            <div class="stat reveal">
               <strong>+50</strong>
               <span>Proyectos</span>
             </div>
-            <div class="stat">
+            <div class="stat reveal">
               <strong>+6</strong>
               <span>Años de experiencia</span>
             </div>
-            <div class="stat">
+            <div class="stat reveal">
               <strong>100%</strong>
               <span>Responsivo</span>
             </div>
@@ -152,13 +152,13 @@
       </div>
     </section>
 
-    <section id="contacto" class="section">
+    <section id="contacto" class="section reveal" data-section>
       <div class="container">
         <h2 class="section-title">Contacto</h2>
         <p class="section-sub">¿Tienes un proyecto? Hablemos.</p>
 
         <div class="contact-grid">
-          <form id="contact-form" class="contact-form" aria-label="Formulario de contacto">
+          <form id="contact-form" class="contact-form reveal" aria-label="Formulario de contacto">
             <label>
               Nombre
               <input type="text" name="name" id="name" required placeholder="Tu nombre">
@@ -178,7 +178,7 @@
             <p class="form-note">O escríbeme directamente a <a href="mailto:hola@danielagullo.com">hola@danielagullo.com</a></p>
           </form>
 
-          <div class="contact-info">
+          <div class="contact-info reveal">
             <h3>Disponibilidad</h3>
             <p>Trabajo remoto y presencial (zona local a convenir). Disponible para colaboraciones, freelance y consultoría.</p>
 
@@ -194,7 +194,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer reveal" data-section>
     <div class="container footer-inner">
       <p>© <span id="year"></span> Daniel Agulló — Creador de páginas web</p>
       <nav class="footer-nav">
