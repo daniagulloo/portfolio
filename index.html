@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daniel Agulló — Creador de páginas web</title>
+  <meta name="description" content="Portfolio de Daniel Agulló — creador de páginas web. Diseño, desarrollo front-end y sitios responsivos." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden><rect width="24" height="24" rx="6" fill="#2B6CB0"/><text x="50%" y="54%" text-anchor="middle" font-size="12" fill="white" font-family="Inter, sans-serif" font-weight="700">DA</text></svg>
+        <span class="brand-text">Daniel Agulló</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto" class="cta">Contactar</a>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hola, soy Daniel Agulló</h1>
+          <p class="lead">Creador de páginas web — diseño y desarrollo de sitios responsivos, rápidos y con foco en conversión.</p>
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn primary">Ver mi trabajo</a>
+            <a href="#contacto" class="btn outline">Trabajemos juntos</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden>
+          <div class="device-mockup">
+            <div class="screen">
+              <div class="screenshot">Tu proyecto aquí</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Servicios</h2>
+        <p class="section-sub">Desde landing pages hasta tiendas online y webs corporativas.</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Diseño Web</h3>
+            <p>Maquetación pixel-perfect, mobile-first y accesible.</p>
+          </article>
+          <article class="card">
+            <h3>Desarrollo Front-end</h3>
+            <p>HTML, CSS moderno, JS y frameworks según necesidad.</p>
+          </article>
+          <article class="card">
+            <h3>Optimización</h3>
+            <p>Performance, SEO técnico y mejores prácticas para velocidad.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-sub">Algunos proyectos recientes — haz click para ver más detalles.</p>
+
+        <div class="portfolio-grid">
+          <!-- Proyecto 1 -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Proyecto Tienda online" loading="lazy">
+            <div class="project-info">
+              <h3>Landing para ecommerce</h3>
+              <p>Landing optimizada para conversión de una tienda de ropa.</p>
+              <div class="project-actions">
+                <a href="#" class="btn small" aria-label="Ver demo del proyecto 1">Demo</a>
+                <a href="#" class="btn small outline" aria-label="Ver código del proyecto 1">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Proyecto web corporativa" loading="lazy">
+            <div class="project-info">
+              <h3>Web corporativa</h3>
+              <p>Sitio institucional para una consultora con CMS integrado.</p>
+              <div class="project-actions">
+                <a href="#" class="btn small">Demo</a>
+                <a href="#" class="btn small outline">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project">
+            <img src="https://images.unsplash.com/photo-1505765052753-2e2f0d42f8b6?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="App web" loading="lazy">
+            <div class="project-info">
+              <h3>Panel de administración</h3>
+              <p>Dashboard responsivo con gráficos y gestión de usuarios.</p>
+              <div class="project-actions">
+                <a href="#" class="btn small">Demo</a>
+                <a href="#" class="btn small outline">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="note">¿Quieres ver más? Puedo enviar un PDF con casos de estudio o preparar una demo en vivo.</p>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section bg-light">
+      <div class="container about">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-inner">
+          <div class="about-text">
+            <p>Soy desarrollador web con enfoque en experiencia de usuario, rendimiento y soluciones que ayudan a crecer negocios online. Trabajo con clientes para transformar ideas en productos reales y medibles.</p>
+            <ul>
+              <li>HTML, CSS (Flexbox / Grid), JavaScript moderno</li>
+              <li>Frameworks: (React / Vue) — a pedido</li>
+              <li>Optimización, SEO técnico y accesibilidad</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <strong>+50</strong>
+              <span>Proyectos</span>
+            </div>
+            <div class="stat">
+              <strong>+6</strong>
+              <span>Años de experiencia</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Responsivo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-sub">¿Tienes un proyecto? Hablemos.</p>
+
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" aria-label="Formulario de contacto">
+            <label>
+              Nombre
+              <input type="text" name="name" id="name" required placeholder="Tu nombre">
+            </label>
+            <label>
+              Correo
+              <input type="email" name="email" id="email" required placeholder="tucorreo@dominio.com">
+            </label>
+            <label>
+              Mensaje
+              <textarea name="message" id="message" rows="5" required placeholder="Cuéntame sobre tu proyecto"></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Enviar mensaje</button>
+              <button type="button" id="demo-btn" class="btn outline">Pedir demo</button>
+            </div>
+            <p class="form-note">O escríbeme directamente a <a href="mailto:hola@danielagullo.com">hola@danielagullo.com</a></p>
+          </form>
+
+          <div class="contact-info">
+            <h3>Disponibilidad</h3>
+            <p>Trabajo remoto y presencial (zona local a convenir). Disponible para colaboraciones, freelance y consultoría.</p>
+
+            <h4>Redes</h4>
+            <ul class="socials">
+              <li><a href="#" aria-label="Ir a GitHub">GitHub</a></li>
+              <li><a href="#" aria-label="Ir a LinkedIn">LinkedIn</a></li>
+              <li><a href="#" aria-label="Ir a Twitter">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Daniel Agulló — Creador de páginas web</p>
+      <nav class="footer-nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" rel="noopener">Política de privacidad</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
